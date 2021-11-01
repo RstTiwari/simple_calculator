@@ -1,0 +1,81 @@
+<!Doctype html>
+<html lang="eng">
+    <head>
+        <meta charset="UTF8">
+        <meta name = "viewport" content="width = device-width , intial-scale =1.0">
+
+        <title>Small calculator</title>
+
+        <style>
+            body{
+                text-align: center;
+                
+            }
+          
+
+        </style>
+
+      
+
+    </head>
+    <body>
+        <span id = "num-1">_</span>
+        <span id = "num-2">_</span><br>
+
+        <button onclick="addition()">add</button>
+        <button onclick="subtraction()">sub</button>
+        <button onclick="multipication()">mul</button>
+        <button onclick="division()">Div</button><br>
+
+        <span id = "show"></span>
+
+
+
+        <script>
+            let num1 = 8
+            let num2 = 5
+            document.getElementById("num-1").innerHTML = num1;
+            document.getElementById("num-2").innerHTML = num2;
+
+            let result = document.getElementById("show")
+
+            // function for adding two values
+
+            function addition(){ 
+               let  sum = num1 + num2;
+                result.innerHTML ="sum: " + sum
+
+            }
+
+            // function for substraction of Two values
+
+            function subtraction(){
+                let sub = num1 - num2
+                result.innerHTML = "sub: " + sub
+
+            }
+
+            function multipication(){
+                let mul = num1 * num2
+                result.innerHTML = "mul: " + mul
+
+            }
+
+            
+            function division(){
+                let div= num1 / num2
+                result.innerHTML = "div: " + div
+
+            }
+
+
+
+
+           
+        </script>
+
+        
+
+    </body>
+
+</html>
