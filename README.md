@@ -1,1 +1,1 @@
-# small_calulator
+# small_calculator
